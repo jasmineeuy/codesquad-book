@@ -62,7 +62,7 @@ passport.use(
     {
       clientID: process.env.Google_Client_ID,
       clientSecret: process.env.Google_Client_Secret,
-      callbackURL: "http://localhost:3000/auth/google",
+      callbackURL: "https://codesquad-book.onrender.com",
     },
     (accessToken, refreshToken, profile, done) => {
       console.log(profile);
