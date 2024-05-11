@@ -6,7 +6,7 @@ const cors = require("cors");
 
 // connect app and add port
 const app = express();
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 4000;
 
 //import session and passport
 const session = require("express-session");
