@@ -45,8 +45,8 @@ passport.use(
   new GithubStrategy(
     {
       //define key value pairs and use process .env
-      clientID: process.env.GitHub_Client_ID,
-      clientSecret: process.env.GitHub_Client_Secret,
+      clientID: process.env.GITHUB_CLIENT_ID,
+      clientSecret: process.env.GITHUB_CLIENT_SECRET,
       callbackURL: "http://localhost:4000/auth/github",
     },
     (accessToken, refreshToken, profile, done) => {
@@ -60,8 +60,8 @@ passport.use(
 passport.use(
   new GoogleStrategy(
     {
-      clientID: process.env.Google_Client_ID,
-      clientSecret: process.env.Google_Client_Secret,
+      clientID: process.env.GOOGLE_CLIENT_ID,
+      clientSecret: process.env.GOOGLE_CLIENT_SECRET,
       callbackURL: "https://codesquad-book.onrender.com",
     },
     (accessToken, refreshToken, profile, done) => {
